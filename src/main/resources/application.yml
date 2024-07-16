@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: tg-bot
+
+  kafka:
+    bootstrapServers: kafka:9092
+    consumer:
+      topic:
+        tg-bot
+
+bot:
+  name: KissingPlacesBot
+  token: 7216764204:AAHhTqQsvSusJ5i9LkYkpXRnr00VG4zgkL8
+
+url:
+  cinema: http://cinema:8080
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        loggerLevel: basic
