@@ -76,7 +76,7 @@ public class MessageCreator {
             for (var place : places) {
                 text.append(place.placeNumber())
                         .append(". Тип: ").append(place.type())
-                        .append("   ").append(place.status())
+                        .append("   Статус: ").append(place.status())
                         .append("\n");
             }
         } else {
